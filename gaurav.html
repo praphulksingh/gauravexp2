@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Study App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header ul li {
+            margin-left: 1rem;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 90%;
+            margin: 2rem auto;
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-bottom: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .course {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .course h3 {
+            color: #007BFF;
+        }
+
+        .course p {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        #login {
+            background: #f1f1f1;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 0.7rem;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background: #0056b3;
+        }
+
+        .login-form p {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .login-form p a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            background: #007BFF;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>StudyApp</h1>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course-list">
+                <div class="course">
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, and JavaScript to build stunning websites.</p>
+                </div>
+                <div class="course">
+                    <h3>Data Science</h3>
+                    <p>Master Python, statistics, and machine learning concepts.</p>
+                </div>
+                <div class="course">
+                    <h3>Graphic Design</h3>
+                    <p>Explore Adobe tools and create visually stunning designs.</p>
+                </div>
+                <div class="course">
+                    <h3>Marketing Strategies</h3>
+                    <p>Learn digital marketing, SEO, and social media strategies.</p>
+                </div>
+            </div>
+        </section>
+        <section id="login">
+            <h2>Login</h2>
+            <form action="#" method="POST" class="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 StudyApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
